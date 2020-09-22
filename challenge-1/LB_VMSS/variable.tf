@@ -78,14 +78,6 @@ variable "disk_size_gb" {
  default      = "100"
 }
 
-variable "environment" {
- description = "Name of the enveronment"
- default     ="devtest"
-}
 
-variable "dept" {
- description = "The name of the department the instance belongs to"
- default     = "IT cloud"
-}
 
 
