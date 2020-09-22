@@ -49,7 +49,7 @@ variable "size" {
 }
 variable "boot_diagnostics" {
  description = "boot diagnostics trorage for VMs"
- default     = "https://ushiprodvmosdiagnostics.blob.core.windows.net/"
+ default     = ""
 }   
 variable "vm_count" {
  description = "Number of VMs deployment"
@@ -57,7 +57,7 @@ variable "vm_count" {
 }
 variable "image_reference_id" {
  description = "storage_image_reference"
- default = "/subscriptions/9dc00106-99f9-48fb-9cf3-4382c0051a46/resourceGroups/nonprod_solution_it_goldimage_dev_rg/providers/Microsoft.Compute/galleries/Lowes_Golden_image_gallery/images/Red_Hat_Enterprise_7.7"
+ default = ""
 }
 variable "storage_account_type" {
  description = "the disk geo replication Locations type"
@@ -67,42 +67,4 @@ variable "environment" {
  description = "Name of the environment"
  default     ="devtest"
 }
-variable "dept" {
- description = "The name of the department the instance belongs to"
- default     = "IT cloud"
-}
-variable "techcon" {
- description = "Name (email id) of the technical contact person"
- default     = "cloud_engineering"
-}
-variable "dataclass" {
- description = "Name of the data Classification"
- default     = "public"
-}
-variable "expdate" {
- description = "Time Window for the VM"
- default     = "2020-02-29"
-}
-variable "main_window" {
- description = "Maintenance Window for the VM"
- default     = "Saturday"
-}
-variable "timewindow" {
- description  = "Time Window for the VM"
- default      = "0600-1200"
-}
-variable "description" {
- description  = "Text description of the entity"
- default      = "used_for_application"
-}
-variable "regcompliance" {
- description  = "To Identifier for the workload if it needs to comply with a compliance requirement"
- default      = "pci"
-}
-variable "company_identifier" {
-  default     = "lws"
-}
-variable "cloud_identifier" {
- description  = "Name of the cloud envernment (Azure or GCP)"
- default      = "azure"
-}
+
